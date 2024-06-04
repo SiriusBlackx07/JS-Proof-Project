@@ -1,0 +1,45 @@
+// Step 1: Create a variable to hold your NFTs
+let nftCollection = [];
+
+// Step 2: Define the mintNFT function
+function mintNFT(name, eyeColor, shirtType, bling) {
+    // Create an NFT object
+    const nft = {
+        name: name,
+        eyeColor: eyeColor,
+        shirtType: shirtType,
+        bling: bling
+    };
+    // Store the NFT object in the nftCollection array
+    nftCollection.push(nft);
+}
+
+// Step 3: Define the listNFTs function
+function listNFTs() {
+    // Loop through the nftCollection array and print each NFT's metadata
+    for (let i = 0; i < nftCollection.length; i++) {
+        console.log(`NFT ${i + 1}:`);
+        console.log(`Name: ${nftCollection[i].name}`);
+        console.log(`Eye Color: ${nftCollection[i].eyeColor}`);
+        console.log(`Shirt Type: ${nftCollection[i].shirtType}`);
+        console.log(`Bling: ${nftCollection[i].bling}`);
+        console.log('---------------------');
+
+
+link for the video explaination :- https://www.loom.com/share/bc58bbf6c12344cd99c696fb19e218c4?sid=8a1ad60c-308f-42dd-a646-1f6116903ae4
+    }
+}
+
+// Step 4: Define the getTotalSupply function
+function getTotalSupply() {
+    // Return the length of the nftCollection array
+    return nftCollection.length;
+}
+
+// Call the functions to test the implementation
+mintNFT("Albus Dumbledore", "Brown", "Cloak", "Elder Wand");
+mintNFT("Sirius Black", "Black", "Coat", "Diamond Ring");
+mintNFT("Harry Potter", "Blue", "Jacket", "Lightning Scar");
+
+listNFTs();
+console.log("Total NFTs Minted: " + getTotalSupply());

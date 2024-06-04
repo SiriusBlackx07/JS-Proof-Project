@@ -26,7 +26,6 @@ function listNFTs() {
         console.log('---------------------');
 
 
-link for the video explaination :- https://www.loom.com/share/bc58bbf6c12344cd99c696fb19e218c4?sid=8a1ad60c-308f-42dd-a646-1f6116903ae4
     }
 }
 
@@ -43,3 +42,5 @@ mintNFT("Harry Potter", "Blue", "Jacket", "Lightning Scar");
 
 listNFTs();
 console.log("Total NFTs Minted: " + getTotalSupply());
+
+link for the video explaination :- https://www.loom.com/share/bc58bbf6c12344cd99c696fb19e218c4?sid=8a1ad60c-308f-42dd-a646-1f6116903ae4
